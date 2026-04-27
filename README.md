@@ -1,5 +1,5 @@
-# Banco-de-dados-II
-📘 UNIDADE 1 - Álgebra Relacional
+UNIDADE 1 — Álgebra Relacional
+
 A álgebra relacional é uma linguagem formal e procedimental, ou seja, o usuário define uma sequência de operações que o sistema deve executar para obter o resultado desejado no banco de dados.
 
 📌 Terminologia do modelo relacional
@@ -27,14 +27,13 @@ Essas operações são usadas para manipular dados e sempre geram uma nova tabel
 Uma relação:
 operação(REL1)
 REL1 → REL2
-
 Duas relações:
 operação(REL1, REL2)
 REL1, REL2 → REL3
 
 👉 Resumo: conjunto de operações para consultar e transformar dados, gerando sempre uma nova tabela.
 
-Seleção (σ)
+🔍 Seleção (σ)
 
 Realiza a seleção de tuplas que satisfazem determinada condição.
 
@@ -43,18 +42,16 @@ Exemplos:
 σ id > 123 (Pessoas)
 σ id > 123 ^ id < 789 (Pessoas)
 σ nome = “Giullia” v nome = “Juan” (Pessoas)
-
-obs: ^ = AND
-     v = OR
-
-Projeção (π)
+^ = AND
+v = OR
+📊 Projeção (π)
 
 Permite gerar novas relações selecionando atributos específicos.
 
-Exemplos:  π nome (Alunos)
-           π matrícula, nome (σ sexo = ‘M’) (Alunos) 
-
-           Produto Cartesiano
+Exemplos:
+π nome (Alunos)
+π matrícula, nome (σ sexo = ‘M’) (Alunos)
+🔗 Produto Cartesiano
 
 Combina todas as linhas de duas tabelas.
 
@@ -68,7 +65,8 @@ Se A (3 colunas, 2 linhas) e B (2 colunas, 3 linhas):
 6 linhas
 
 👉 Todas as combinações possíveis entre as tabelas.
-Exemplo com Alunos e Cursos
+
+📘 Exemplo com Alunos e Cursos
 π nome, sexo, curso (σ Alunos.curso = Cursos.id) (Alunos x Cursos)
 
 Etapas:
